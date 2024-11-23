@@ -1,5 +1,5 @@
 import * as dao from "./dao.js";
-import * as courseDao from "../Courses/dao.js";
+import * as courseDao from "./dao.js";
 import * as modulesDao from "../Modules/dao.js";
 import * as assignmentDao from "../Assignments/dao.js"
 
