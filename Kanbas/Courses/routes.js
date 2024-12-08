@@ -51,7 +51,7 @@ export default function CourseRoutes(app) {
     res.json(assignments);
   });
 
-  app.post("/api/courses/:courseId/assignments", (req, res) => {
+  app.post("/api/courses/:courseId/assignments",  (req, res) => {
     const { courseId } = req.params;
     const newAssignment = { ...req.body, course: courseId };
     const assignment = assignmentDao.createAssignment(newAssignment);
