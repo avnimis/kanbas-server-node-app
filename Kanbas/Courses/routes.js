@@ -1,9 +1,8 @@
 import * as dao from "./dao.js";
 import * as courseDao from "./dao.js";
 import * as modulesDao from "../Modules/dao.js";
-import * as assignmentDao from "../Assignments/dao.js"
-​​import * as enrollmentsDao from "../Enrollments/dao.js";
-
+import * as assignmentDao from "../Assignments/dao.js";
+import * as enrollmentsDao from "../Enrollments/dao.js";
 
 export default function CourseRoutes(app) {
   app.post("/api/courses", async (req, res) => {
